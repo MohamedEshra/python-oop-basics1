@@ -1,10 +1,23 @@
-## every thing is object
+class Main_calc:
+    def __init__(self):
+        print('welcome in our calculator')
 
-c ="welcome"
+    def sum(self,x,y):
+        print(x+y)  
+        
+class Test:
+    def sum(self,x,y):
+        print('In Test')
+        print(x+y) 
 
-l =[1,2,3,4,5]
+class Calculator(Test):
+    def mul(self,x,y):
+        print(x*y) 
 
-l.pop()
-l.append(5)
+class Sicentific(calculator , main_calc):
+    def power(self,x,y):
+        return x**y
 
-print(type(c)) 
+x = Sicentific()
+x.sum(5,6)
+x.mul(2,3)           
